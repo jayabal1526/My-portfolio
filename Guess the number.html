@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input">
+    <button onclick="guess()">chock</button>
+    <p id="result">wrong/right</p>
+    <p id="score">score:0</p>
+    <script>
+        let input1=document.getElementById("input")
+        let result1=document.getElementById("result")
+        let score1=document.getElementById("score")
+        score=0
+        let randomnum=Math.floor(Math.random()*10)+1
+        function guess(){
+       var enternum=Number(input1.value)
+    if(score>=10){
+        result1.textContent="already score is full"
+        alert("congratulation")
+    
+    }
+       else if(enternum==randomnum){
+       score=score+1
+       score1.textContent=("your score:")+score
+        result1.textContent="right";
+       
+
+                      }
+                     
+        else{
+            score=score-1
+            score1.textContent=("your score is:")+score
+            result1.textContent="wrong"}
+        
+       }
+        
+
+    </script>
+</body>
+</html>
