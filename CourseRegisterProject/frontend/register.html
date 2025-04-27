@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Course Registration</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #e8eff1;
+        font-family: "Arial", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .form-card {
+        background: #ffffff;
+        padding: 40px 30px;
+        border-radius: 12px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 420px;
+      }
+
+      .form-card h2 {
+        margin-bottom: 25px;
+        text-align: center;
+        color: #333;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 600;
+        color: #555;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 14px;
+        outline: none;
+      }
+
+      input:focus,
+      select:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-card">
+      <h2>Register for a Course</h2>
+      <form action="http://localhost:8080/allcourse/register" method="post" id="refresh">
+        <div class="form-group">
+          <label for="name">enter ur name</label>
+          <input type="text" name="name"><br><br>
+        </div>
+
+        <div class="form-group">
+          <label for="email">enter ur email</label>
+          <input type="email" name="emailId"><br><br>
+        </div>
+
+        <div class="form-group">
+          <label for="course">enter ur courseName</label>
+          <select name="courseName">
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="SQL">SQL</option>
+            <option value="datascience">Data Science</option>
+            <option value="Data Analyst">Data Analyst</option>
+            <option value="Software Testing">Software Testing</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+
+          </select>
+        </div>
+
+        <button type="submit">Submit Registration</button>
+        <script src="script.js"></script>
+      </form>
+    </div>
+  </body>
+</html>

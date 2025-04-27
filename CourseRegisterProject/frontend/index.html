@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Portal</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #8ec5fc, #e0c3fc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .main-container {
+      text-align: center;
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      width: 90%;
+      max-width: 600px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .button-container a {
+      display: block;
+      text-decoration: none;
+      padding: 15px;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .button-container a:hover {
+      background-color: #0056b3;
+    }
+
+    @media (min-width: 600px) {
+      .button-container {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .button-container a {
+        flex: 1;
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <h1>Welcome to Course Portal</h1>
+    <div class="button-container">
+      <a href="register.html">Register Course</a>
+      <a href="available.html">Available Courses</a>
+      <a href="entrolled.html">Enrolled Courses</a>
+    </div>
+  </div>
+</body>
+</html>
